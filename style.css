@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#74ebd5,#acb6e5);
+    color:black;
+    transition:0.4s;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:beige;
+    color:fuchsia;
+}
+
+#toggle{
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:black;
+    color:white;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+.container{
+    width:50%;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.input-box input{
+    flex:1;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid gray;
+}
+
+.input-box button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#74ebd5;
+    color:white;
+    cursor:pointer;
+}
+
+.input-box button:hover{
+    background:#4ecdc4;
+}
+
+#todo-list{
+    list-style:none;
+}
+
+#todo-list li{
+    background:#f4f4f4;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#todo-list li:hover{
+    transform:translateX(5px);
+    background:#dff9fb;
+}
+
+#clear{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+
+#clear:hover{
+    background:darkred;
+}
+
+/* DARK MODE */
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .container{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark .nav{
+    background:black;
+    color:white;
+}
+
+.dark #todo-list li{
+    background:#333;
+    color:white;
+}
+
+.dark #todo-list li:hover{
+    background:#444;
+}
+
+#toggle{
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:black;
+    color:white;
+}

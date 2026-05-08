@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav">
+        <h2>My Daily Tasks</h2>
+        <button id="toggle">Dark</button>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <h2>My Todo List</h2>
+
+            <div class="input-box">
+                <input type="text" id="inp" placeholder="Add a task...">
+                <button onclick="addtask()">Add</button>
+            </div>
+
+            <ul id="todo-list"></ul>
+
+            <button id="clear" onclick="clearTasks()">Clear All</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
